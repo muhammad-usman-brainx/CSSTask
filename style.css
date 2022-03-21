@@ -1,0 +1,280 @@
+.firstcard .brilliantcard{
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(241, 241, 241);
+}
+
+@media only screen and (max-width: 600px) {
+    .firstcard {
+        margin-right: 15px;
+        min-width: 330px;
+        width: 100%;
+        background-color: white;
+        display: block;
+        text-align: center;
+        padding-top: 10px;
+        padding-bottom: 20px;
+        padding-left: 5px;
+        padding-right: 5px;
+        margin-top: 18px;
+        border: 3px solid rgb(228, 225, 225);
+        border-radius: 7px;
+        position: relative;
+        top: 0;
+        transition: top ease-in 0.5s;
+    }
+    .brilliantcard{
+        margin-right: 15px;
+        min-width: 330px;
+        width: 100%;
+        display: block;
+        background-color: white;
+        text-align: center;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        margin-top: 18px;
+        padding-left: 5px;
+        padding-right: 5px;
+        border: 3px solid rgb(20, 185, 20);
+        border-radius: 7px;
+        position: relative;
+        top: 0;
+        transition: top linear 0.5s;
+    }
+    .brilliantcard:hover{
+        top: -15px;
+    }
+    .container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 40px auto;
+
+    }
+    
+    .firstcard:hover{
+        top: -15px;
+    }
+} 
+@media only screen and (min-width: 500px) {
+    .firstcard {
+        width: 300px;
+        display: inline-block;
+        background-color: white;
+        margin-right: 15px;
+        text-align: center;
+        padding: 25px 30px 25px 30px;
+        box-sizing: border-box;
+        border: 3px solid rgb(228, 225, 225);
+        border-radius: 7px;
+        position: relative;
+        top: 0;
+        transition: top linear 0.5s;
+        
+    }
+    
+    .brilliantcard{
+        margin-right: 15px;
+        display: inline-block;
+        width: 350px;
+        background-color: white;
+        box-sizing: border-box;
+        text-align: center;
+        padding: 25px 30px 25px 30px;
+        border: 3px solid rgb(20, 185, 20);
+        border-radius: 7px;
+        position: relative;
+        top: 0;
+        transition: top linear 0.5s;
+    }
+    .container{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        margin: 40px auto;
+    }
+    
+    .brilliantcard:hover{
+        top: -16px;
+    }
+    
+    .firstcard:hover{
+        top: -16px;
+    }
+} 
+
+
+/*.................*/
+
+.brilliantcard::before{
+    content: "";
+    top:0;
+    left:0;
+    position:absolute;
+    border-style: solid;
+    border-width: 40px 40px 10px 10px;
+    border-color: rgb(20, 185, 20);
+}
+.outer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 30px 0;
+}
+.footer{
+    color: gray;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.w3layout{
+    color: gray;
+    text-decoration: none;
+    font-weight: bold;
+}
+.w3layout:hover{
+    color: rgb(20, 185, 20);
+    text-decoration: none;
+}
+
+.text{
+    color: rgb(41, 41, 90);
+    font-weight:bolder;
+}
+.textprice{
+    color: rgb(41, 41, 90);
+    font-size: large;
+    color: gray;
+}
+
+.header{
+    text-align: center;
+    margin: 25px 0;
+}
+.star{
+    top:0;
+    left:0;
+    position: absolute;
+    margin-left: 14px;
+    margin-top: 14px;
+    color: white;
+}
+.avail{
+    border: 1px solid rgb(218, 215, 215);
+    background-color: white;
+    padding: 6px 22px;
+    border-radius: 15px;
+    margin-top: 20px;
+    position: relative;
+    display: inline-block;
+    color: green;
+    font-weight: bold;
+    font-size: 14px;
+    z-index: 1;
+}
+.line{
+    color: white;
+    margin-bottom: 20px;
+    position: relative;
+    top:-45px;
+}
+
+.btnstart{
+    color: rgb(20, 185, 20);
+    background-color: rgb(230, 230, 230);
+    width: 120px;
+    height: 40px;
+    border-radius: 5px;
+    border-color: rgb(230, 230, 230);
+    margin-top: 15px;
+    margin-bottom: 20px;
+    font-size: 15px;
+    border: none;
+}
+
+.btnbrilliant{
+    color: rgb(230, 230, 230);
+    background-color: rgb(20, 185, 20);
+    width: 120px;
+    height: 40px;
+    border-radius: 5px;
+    margin-top: 15px;
+    border-color: rgb(20, 185, 20);
+    margin-bottom: 20px;
+    font-size: 15px;
+    border: none;
+}
+
+.btnbrilliant:hover{
+    cursor: pointer;
+}
+
+.btnstart:hover{
+    background-color: rgb(20, 185, 20);
+    color: rgb(230, 230, 230);
+    cursor: pointer;
+}
+
+.list{
+    text-align:left;
+    margin-left: 12px;
+}
+.back{
+    color: gray;
+}
+.back:hover{
+    color: gray;
+    cursor: pointer;
+}
+
+.bar{
+    text-align: center;
+    position: fixed;
+    z-index: 1;
+    top:0;
+    right:0;
+    margin-top: 60px;
+    background-color: black;
+    padding-top: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 20px;
+    border-top-left-radius: 10px ;
+    border-bottom-left-radius: 10px;
+}
+
+.baritem{
+    font-size: smaller;
+    color: grey;
+    text-decoration: none;
+}
+
+.baritem:hover{
+    color: white;
+    cursor: pointer;
+    text-decoration: none;
+    
+}
+
+.svg{
+    display: inline;
+    color: rgb(20, 185, 20);
+}
+
+.svgtext{
+    display: inline;
+    padding-top: 5px;
+    font-size: 18px;
+    color: gray;
+
+}
+
+.footertext{
+    font-size: 17px;
+    margin: 0 10px;
+}
